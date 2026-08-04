@@ -3,3 +3,19 @@
 ![ข้อความอธิบายรูปภาพ](images/Project_workflow.png)
 ## Project Overview
 This project aims to predict customer default risk and identify the key drivers behind loan defaults.
+## Dataset 
+* annual_income(num)(independent variable)
+* debt_to_income(num)(independent variable)
+* delinq_2y(num)(independent variable)
+* num_collections_last_12m(num)(independent variable)
+* num_historical_failed_to_pay(num)(independent variable)
+* total_collection_amount_ever (num)(independent variable)
+* num_cc_carrying_balance(num)(independent variable)
+* account_never_delinq_percent(num)(independent variable)
+* tax_liens(num)(independent variable)
+* loan_amount(num)(independent variable)
+* term(ordinal catagorical)(independent variable)
+* interest_rate(num)(independent variable)
+* grade(ordinal catagorical)(independent variable)
+* total_credit_utilized(num)(independent variable)
+* loan_status(target variable)
