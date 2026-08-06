@@ -40,5 +40,5 @@ From the histrogram graph of annual_income, loan_amount and total_creit_utilized
 ![Default_Rate_Analysis of grade](images/grade_def.png)
 #### Loan Amount
 ![Default_Rate_Analysis of loan_amount](images/loan_amount_def.png)
-
-
+#### Finding from Default Rate Analysis
+We found a strong correlation from two variables there are interest rate and grade with loan default.At higher range of interest rate and grade found more rate of default. We also found some relation in loan amount at the first and in the end related with default rate although between thease two point are un predictable. The interesting that we found from default rate analysis come from two variables there are debt to income and annual income which have very similar trend between them.More clarify, at the low range of both variables found high rate of default and slightly decrease at the middle range before slightly increase at the high range of variables(Inverted Bell Curve). However we can't find data evidence to support that both of them are actually bell curve.
