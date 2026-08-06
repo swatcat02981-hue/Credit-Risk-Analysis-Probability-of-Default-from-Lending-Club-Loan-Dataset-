@@ -25,3 +25,5 @@ This project aims to predict customer default risk and identify the key drivers 
 ![Distribution of annual income](images/annual_income_dist.png)
 #### Total Credit Utilized
 ![Distribution of total_credit_utilized](images/total_credit_utilized_dist.png)
+#### Loan Amount
+![Distribution of loan_amount](images/loan_amount_dist.png)
