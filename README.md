@@ -21,3 +21,4 @@ This project aims to predict customer default risk and identify the key drivers 
 * loan_status(target variable)
 ## Exploratory Data Analysis
 ### Distribution analysis
+![Distribution of annual income](images/annual_income_dist.png)
