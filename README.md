@@ -33,8 +33,12 @@ From the histrogram graph of annual_income, loan_amount and total_creit_utilized
 #### Debt to Income
 ![Default_Rate_Analysis of debt_to_income](images/debt_to_income_def.png)
 #### Annual Income
+![Default_Rate_Analysis of annual_income](images/annual_income_def.png)
 #### Interest Rate
+![Default_Rate_Analysis of interest_rate](images/interest_rate_def.png)
 #### Grade
+![Default_Rate_Analysis of grade](images/grade_def.png)
 #### Loan Amount
+![Default_Rate_Analysis of loan_amount](images/loan_amount_def.png)
 
 
