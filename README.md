@@ -28,7 +28,7 @@ This project aims to predict customer default risk and identify the key drivers 
 #### Loan Amount
 ![Distribution of loan_amount](images/loan_amount_dist.png)
 #### Finding from distribution analysis
-From the histrogram graph of annual_income, loan_amount and total_creit_utilized we found that we need to take a log transformation to annual_income and total_creit_utilized because of right-skewness of both histrogram graph before we bring a dataset to fit a logistic regression model.( Decreasing an effect feom outlier)
+Most people annual income in range between 50k-100k(49%).From the histrogram graph of annual_income, loan_amount and total_creit_utilized we found that we need to take a log transformation to annual_income and total_creit_utilized because of right-skewness of both histrogram graph before we bring a dataset to fit a logistic regression model.( Decreasing an effect feom outlier)
 ### Default Rate Analysis
 #### Debt to Income
 ![Default_Rate_Analysis of debt_to_income](images/debt_to_income_def.png)
