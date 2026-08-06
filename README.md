@@ -19,3 +19,5 @@ This project aims to predict customer default risk and identify the key drivers 
 * grade(ordinal catagorical)(independent variable)
 * total_credit_utilized(num)(independent variable)
 * loan_status(target variable)
+## Exploratory Data Analysis
+### Distribution analysis
