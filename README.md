@@ -48,7 +48,7 @@ We found a strong correlation from two variables there are interest rate and gra
 When we considering a result from correlation heat map found that interest_rate and grade have a high correlation between each of them and also has a high value of variance inflation factor so, we consider to choose one of them out. Interest rate is continuous meanwhile, grade is ordinal catagorical, I prefer to keep an interest rate
 ## Modeling
 ### Model1: Logistic Regression
-The model was evaluated using a confusion matrix, classification report, ROC-AUC score and logistic regression results table.
+The model was evaluated using a confusion matrix, classification report, ROC-AUC score and logistic regression results table by choosing threshold at 0.486
 
 #### Confusion Matrix
 
