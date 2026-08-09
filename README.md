@@ -48,18 +48,16 @@ We found a strong correlation from two variables there are interest rate and gra
 When we considering a result from correlation heat map found that interest_rate and grade have a high correlation between each of them and also has a high value of variance inflation factor so, we consider to choose one of them out. Interest rate is continuous meanwhile, grade is ordinal catagorical, I prefer to keep an interest rate
 ## Modeling
 ### Model1: Logistic Regression
-## 📊 Model Evaluation
+The model was evaluated using a confusion matrix, classification report, ROC-AUC score and logistic regression results table.
 
-The model was evaluated using a confusion matrix, classification report, and ROC-AUC score.
-
-### Confusion Matrix
+#### Confusion Matrix
 
 |              | Predicted 0 | Predicted 1 |
 | ------------ | ----------: | ----------: |
 | **Actual 0** |          32 |          56 |
 | **Actual 1** |           3 |          18 |
 
-### Classification Report
+#### Classification Report
 
 | Class            | Precision | Recall | F1-score | Support |
 | ---------------- | --------: | -----: | -------: | ------: |
@@ -68,14 +66,14 @@ The model was evaluated using a confusion matrix, classification report, and ROC
 | **Macro Avg**    |      0.58 |   0.61 |     0.45 |     109 |
 | **Weighted Avg** |      0.79 |   0.46 |     0.49 |     109 |
 
-### Overall Performance
+#### Overall Performance
 
 | Metric       |      Score |
 | ------------ | ---------: |
 | **Accuracy** |       0.46 |
 | **ROC-AUC**  | **0.6851** |
 
-### Interpretation
+#### Interpretation
 
 The model achieves a **ROC-AUC of 0.6851**, indicating moderate ability to distinguish between the two classes.
 
@@ -84,6 +82,28 @@ For **Class 1**, the model has a high recall of **0.86**, meaning that it succes
 For **Class 0**, the model has high precision (**0.91**) but relatively low recall (**0.36**), meaning that although its predictions of Class 0 are usually correct, it misses a considerable number of actual Class 0 cases.
 
 Overall, the model appears to prioritize detecting **Class 1** over minimizing false positives.
+#### Logistic Regression Results Table
+
+| Variable                     |   Coef. | Std. Error |       z | P>|z| | 95% CI Lower | 95% CI Upper |
+| ---------------------------- | ------: | ---------: | ------: | ----: | -----------: | -----------: |
+| const                        | -1.6238 |      0.140 | -11.572 | 0.000 |       -1.899 |       -1.349 |
+| log_annual_income            | -0.1447 |      0.165 |  -0.877 | 0.380 |       -0.468 |        0.179 |
+| debt_to_income               | -0.0415 |      0.171 |  -0.243 | 0.808 |       -0.376 |        0.293 |
+| delinq_2y                    |  0.1048 |      0.134 |   0.782 | 0.434 |       -0.158 |        0.367 |
+| num_collections_last_12m     | -0.0221 |      0.123 |  -0.180 | 0.857 |       -0.263 |        0.219 |
+| num_historical_failed_to_pay |  0.0422 |      0.143 |   0.294 | 0.768 |       -0.239 |        0.323 |
+| total_collection_amount_ever | -0.3561 |      0.313 |  -1.138 | 0.255 |       -0.969 |        0.257 |
+| num_cc_carrying_balance      | -0.1928 |      0.171 |  -1.125 | 0.261 |       -0.529 |        0.143 |
+| account_never_delinq_percent |  0.0312 |      0.143 |   0.218 | 0.827 |       -0.249 |        0.312 |
+| tax_liens                    |  0.0211 |      0.150 |   0.141 | 0.888 |       -0.272 |        0.315 |
+| loan_amount                  |  0.3183 |      0.156 |   2.045 | 0.041 |        0.013 |        0.623 |
+| term                         | -0.1478 |      0.147 |  -1.006 | 0.314 |       -0.436 |        0.140 |
+| interest_rate                |  0.5547 |      0.133 |   4.175 | 0.000 |        0.294 |        0.815 |
+| log_total_credit_utilized    | -0.2112 |      0.167 |  -1.261 | 0.207 |       -0.539 |        0.117 |
+
+A significant of coefficient can indicate by a p-value, a less number of p-value indicate a probability of coefficent value will eqauls to zero is very less. Mostly, we use a standard number to decide which feature coefficient is significant or not at 0.05. From a p-value matrix above, only two <0.05 coefficient number is cofficeint of interest rate which is 0.00 that mean mostly of model was determine by this variable. Most second sinificant feature is loan_amount which its coefficient equals to 0.041 that mean this variable can indicate a trend of model roughly.
+  * loan_amount Suppose income increase by 1 unit, odd of default will increase by 2.3% or odd ratio equal to 1.023
+  * interest_rate Suppose income increase by 1 unit, odd of default will increase by 5.5% or odd ratio equa
 
 
 
