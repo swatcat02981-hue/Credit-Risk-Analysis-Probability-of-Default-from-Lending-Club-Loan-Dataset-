@@ -130,6 +130,30 @@ The model was evaluated using a confusion matrix, classification report, ROC-AUC
 
 We still focus on default in payment prevention more than keep a good borrower. So, we choose a threshold that gives us a recall of default at >0.85 it is 0.16 Compare with a confusion matrix table from logistic regression model above, we see that this model predict closely with the previous model. This model predict better on class0 more than previous model only one person. We conclude that no different between these two models. 
 
+#### Feature Importance
+
+| Feature | Importance |
+|---|---:|
+| interest_rate | 0.163292 |
+| annual_income | 0.127761 |
+| term | 0.120058 |
+| total_collection_amount_ever | 0.117921 |
+| debt_to_income | 0.101324 |
+| total_credit_utilized | 0.089595 |
+| loan_amount | 0.081519 |
+| num_cc_carrying_balance | 0.076371 |
+| account_never_delinq_percent | 0.072232 |
+| delinq_2y | 0.048223 |
+| num_historical_failed_to_pay | 0.001705 |
+| num_collections_last_12m | 0.000000 |
+| tax_liens | 0.000000 |
+| grade | 0.000000 |
+
+A top3 importance feature that most contribute to our model are 1.interest rate, 2.annual income and 3.term .
+
+#### SHAP Summary plot
+#### SHAP Dependence plot
+
 
 
 
