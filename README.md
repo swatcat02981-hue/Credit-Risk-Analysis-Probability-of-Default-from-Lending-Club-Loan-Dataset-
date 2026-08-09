@@ -75,17 +75,15 @@ The model was evaluated using a confusion matrix, classification report, ROC-AUC
 
 #### Interpretation
 
-The model achieves a **ROC-AUC of 0.6851**, indicating moderate ability to distinguish between the two classes.
+The model achieves a **ROC-AUC of 0.6851, indicating moderate ability to distinguish between the two classes.
 
 For **Class 1**, the model has a high recall of **0.86**, meaning that it successfully identifies most positive cases. However, its precision is relatively low at **0.24**, indicating a relatively high number of false positives.
 
 For **Class 0**, the model has high precision (**0.91**) but relatively low recall (**0.36**), meaning that although its predictions of Class 0 are usually correct, it misses a considerable number of actual Class 0 cases.
 
 Overall, the model appears to prioritize detecting **Class 1** over minimizing false positives.
+
 #### Logistic Regression Results Table
-
-## Logit Regression Results
-
 | Variable | Coef. | Std. Error | z | P-value | 95% CI Lower | 95% CI Upper |
 |---|---:|---:|---:|---:|---:|---:|
 | const | -1.6238 | 0.140 | -11.572 | 0.000 | -1.899 | -1.349 |
@@ -102,8 +100,6 @@ Overall, the model appears to prioritize detecting **Class 1** over minimizing f
 | term | -0.1478 | 0.147 | -1.006 | 0.314 | -0.436 | 0.140 |
 | interest_rate | 0.5547 | 0.133 | 4.175 | 0.000 | 0.294 | 0.815 |
 | log_total_credit_utilized | -0.2112 | 0.167 | -1.261 | 0.207 | -0.539 | 0.117 |
-
-
 
 A significant of coefficient can indicate by a p-value, a less number of p-value indicate a probability of coefficent value will eqauls to zero is very less. Mostly, we use a standard number to decide which feature coefficient is significant or not at 0.05. From a p-value matrix above, only two <0.05 coefficient number is cofficeint of interest rate which is 0.00 that mean mostly of model was determine by this variable. Most second sinificant feature is loan_amount which its coefficient equals to 0.041 that mean this variable can indicate a trend of model roughly.
   * loan_amount Suppose income increase by 1 unit, odd of default will increase by 2.3% or odd ratio equal to 1.023
