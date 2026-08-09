@@ -102,5 +102,9 @@ A significant of coefficient can indicate by a p-value, a less number of p-value
   * loan_amount Suppose income increase by 1 unit, odd of default will increase by 2.3% or odd ratio equal to 1.023
   * interest_rate Suppose income increase by 1 unit, odd of default will increase by 5.5% or odd ratio equa
 
+### Model2: XG Boost
+The model was evaluated using a confusion matrix, classification report, ROC-AUC score SHAP summary and dependence plot by choosing threshold at 0.16
+
+
 
 
