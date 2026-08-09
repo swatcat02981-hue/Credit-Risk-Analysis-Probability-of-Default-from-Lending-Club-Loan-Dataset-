@@ -105,6 +105,31 @@ A significant of coefficient can indicate by a p-value, a less number of p-value
 ### Model2: XG Boost
 The model was evaluated using a confusion matrix, classification report, ROC-AUC score SHAP summary and dependence plot by choosing threshold at 0.16
 
+#### Confusion Matrix
+
+|              | Predicted 0 | Predicted 1 |
+| ------------ | ----------: | ----------: |
+| **Actual 0** |          33 |          55 |
+| **Actual 1** |           3 |          18 |
+
+#### Classification Report
+
+| Class            | Precision | Recall | F1-score | Support |
+| ---------------- | --------: | -----: | -------: | ------: |
+| **0**            |      0.92 |   0.38 |     0.53 |      88 |
+| **1**            |      0.25 |   0.86 |     0.38 |      21 |
+| **Macro Avg**    |      0.58 |   0.62 |     0.46 |     109 |
+| **Weighted Avg** |      0.79 |   0.47 |     0.50 |     109 |
+
+#### Overall Performance
+
+| Metric       |      Score |
+| ------------ | ---------: |
+| **Accuracy** |       0.47 |
+| **ROC-AUC**  | **0.7083** |
+
+We still focus on default in payment prevention more than keep a good borrower. So, we choose a threshold that gives us a recall of default at >0.85 it is 0.16 Compare with a confusion matrix table from logistic regression model above, we see that this model predict closely with the previous model. This model predict better on class0 more than previous model only one person. We conclude that no different between these two models. 
+
 
 
 
