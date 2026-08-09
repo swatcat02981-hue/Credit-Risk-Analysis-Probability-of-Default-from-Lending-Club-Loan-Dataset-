@@ -75,6 +75,7 @@ The model was evaluated using a confusion matrix, classification report, ROC-AUC
 
 In loan business, we focus on default in payment prevention more than keep a good borrower. So, we choose a threshold that gives us a recall of default at >0.85 it is 0.486.
 The model achieves a **ROC-AUC of 0.6851, indicating moderate ability to distinguish between the two classes. We choose threshold at 0.486 
+
 For **Class 1**, the model has a high recall of **0.86**, meaning that it successfully identifies most positive cases. However, its precision is relatively low at **0.24**, indicating a relatively high number of false positives.
 For **Class 0**, the model has high precision (**0.91**) but relatively low recall (**0.36**), meaning that although its predictions of Class 0 are usually correct, it misses a considerable number of actual Class 0 cases.
 Overall, the model appears to prioritize detecting **Class 1** over minimizing false positives.
