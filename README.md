@@ -45,4 +45,45 @@ We found a strong correlation from two variables there are interest rate and gra
 ### Correlation Analysis
 ![Correlation of variables](images/correlation.png)
 #### Finding from correlation analysis
-When we considering a result from correlation heat map found that interest_rate and grade have a high correlation between each of them and also has a high value of variance inflation factor so, we consider to choose one of them out. Interest rate is continuous meanwhile, grade is ordinal catagorical, I prefer to keep an interest rate.
+When we considering a result from correlation heat map found that interest_rate and grade have a high correlation between each of them and also has a high value of variance inflation factor so, we consider to choose one of them out. Interest rate is continuous meanwhile, grade is ordinal catagorical, I prefer to keep an interest rate
+## Modeling
+### Model1: Logistic Regression
+## 📊 Model Evaluation
+
+The model was evaluated using a confusion matrix, classification report, and ROC-AUC score.
+
+### Confusion Matrix
+
+|              | Predicted 0 | Predicted 1 |
+| ------------ | ----------: | ----------: |
+| **Actual 0** |          32 |          56 |
+| **Actual 1** |           3 |          18 |
+
+### Classification Report
+
+| Class            | Precision | Recall | F1-score | Support |
+| ---------------- | --------: | -----: | -------: | ------: |
+| **0**            |      0.91 |   0.36 |     0.52 |      88 |
+| **1**            |      0.24 |   0.86 |     0.38 |      21 |
+| **Macro Avg**    |      0.58 |   0.61 |     0.45 |     109 |
+| **Weighted Avg** |      0.79 |   0.46 |     0.49 |     109 |
+
+### Overall Performance
+
+| Metric       |      Score |
+| ------------ | ---------: |
+| **Accuracy** |       0.46 |
+| **ROC-AUC**  | **0.6851** |
+
+### Interpretation
+
+The model achieves a **ROC-AUC of 0.6851**, indicating moderate ability to distinguish between the two classes.
+
+For **Class 1**, the model has a high recall of **0.86**, meaning that it successfully identifies most positive cases. However, its precision is relatively low at **0.24**, indicating a relatively high number of false positives.
+
+For **Class 0**, the model has high precision (**0.91**) but relatively low recall (**0.36**), meaning that although its predictions of Class 0 are usually correct, it misses a considerable number of actual Class 0 cases.
+
+Overall, the model appears to prioritize detecting **Class 1** over minimizing false positives.
+
+
+
