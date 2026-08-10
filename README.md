@@ -152,6 +152,8 @@ We still focus on default in payment prevention more than keep a good borrower. 
 A top3 importance feature that most contribute to our model are 1.interest rate, 2.annual income and 3.term .
 
 #### SHAP Summary plot
+![SHAP Summary Plot](images/SHAP_summary_plot.png)
+When we compare all feature SHAP values, there are four features that seem obvious significant. First, total_credit_utilized are mostly blue negative SHAP point show that a persom who use low amount of credit decreasing chance to loan default. Second, num_cc_carrying_balance which shows a range from red point to blue point in the left side indicates that any person who has credit card decreasing a chance to loan default. Third, interest rate shows a range from red point to blue point in the right side shows that for any rate of interest trend to increase a probability of laon default, Lastly, annual_income which shows a range from red point to blue point in the left side indicates that in any range of income decreasing a chance to loan default.
 #### SHAP Dependence plot
 
 
