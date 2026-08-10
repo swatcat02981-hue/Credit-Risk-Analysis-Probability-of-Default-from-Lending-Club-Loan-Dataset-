@@ -156,7 +156,11 @@ A top3 importance feature that most contribute to our model are 1.interest rate,
 
 When we compare all feature SHAP values, there are four features that seem obvious significant. First, total_credit_utilized are mostly blue negative SHAP point show that a persom who use low amount of credit decreasing chance to loan default. Second, num_cc_carrying_balance which shows a range from red point to blue point in the left side indicates that any person who has credit card decreasing a chance to loan default. Third, interest rate shows a range from red point to blue point in the right side shows that for any rate of interest trend to increase a probability of laon default, Lastly, annual_income which shows a range from red point to blue point in the left side indicates that in any range of income decreasing a chance to loan default.
 #### SHAP Dependence plot
-
+##### Total Credit Utilized
+![SHAP depence of total credit utilized](images/SHAP_total_credit_utilized.png)
+##### Num cc Carrying Balance
+##### Interest Rate
+##### Annual Income
 
 
 
