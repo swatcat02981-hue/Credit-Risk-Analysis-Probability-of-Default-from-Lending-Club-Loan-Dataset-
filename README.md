@@ -158,7 +158,7 @@ When we compare all feature SHAP values, there are four features that seem obvio
 #### SHAP Dependence plot
 ##### Total Credit Utilized
 ![SHAP depence of total credit utilized](images/SHAP_total_credit_utilized.png)
-##### Num cc Carrying Balance
+##### Num Credit Card Carrying Balance
 ![SHAP depence of num cc carrying balance](images/SHAP_num_cc_carrying_balance.png)
 ##### Interest Rate
 ![SHAP depence of interest rate](images/SHAP_interest_rate.png)
