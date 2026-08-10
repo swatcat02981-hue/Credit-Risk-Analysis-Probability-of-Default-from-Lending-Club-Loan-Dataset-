@@ -159,8 +159,11 @@ When we compare all feature SHAP values, there are four features that seem obvio
 ##### Total Credit Utilized
 ![SHAP depence of total credit utilized](images/SHAP_total_credit_utilized.png)
 ##### Num cc Carrying Balance
+![SHAP depence of num cc carrying balance](images/SHAP_num_cc_carrying_balance.png)
 ##### Interest Rate
+![SHAP depence of interest rate](images/SHAP_interest_rate.png)
 ##### Annual Income
+![SHAP depence of annual income](images/SHAP_annual_income.png)
 
 
 
