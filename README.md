@@ -165,5 +165,9 @@ When we compare all feature SHAP values, there are four features that seem obvio
 ##### Annual Income
 ![SHAP depence of annual income](images/SHAP_annual_income.png)
 
+Elaboration on each features by using SHAP dependence plot, we finding more information on total_credit_utilized and num_cc_carrying_balance. 
+* For total credit utilized Credit utilisation contributes to the prediction, but its effect is not purely linear. The model appears to distinguish different borrower profiles rather than applying a simple "higher utilisation equals higher risk" rule.Historical collection activity appears to strengthen the impact of credit utilisation, suggesting that borrowers with both high credit exposure and collection history deserve closer monitoring.
+* Within this dataset, borrowers with more credit card accounts carrying balances generally received lower predicted default contributions from this feature. This finding is counterintuitive and may reflect other underlying borrower characteristics rather than a causal relationship.
+
 
 
