@@ -170,8 +170,8 @@ Elaboration on each features by using SHAP dependence plot, we finding more info
 * Within this dataset, borrowers with more credit card accounts carrying balances generally received lower predicted default contributions from this feature. This finding is counterintuitive and may reflect other underlying borrower characteristics rather than a causal relationship.
 
 ## Business Insights
-* 1. Interest rate feature is statistical significance for logistic regression model and most contribute predictive for XG boost model. However, this variable may was determined by lender from a historical credit before a loan contract was creating.
-  2. Mrs
+1. Interest rate feature is statistical significance for logistic regression model and most contribute predictive for XG boost model. However, this variable may was determined by lender from a historical credit before a loan contract was creating.
+2. Loan amount feature is second statistical significant only to interest rate for logistic regression model although it is 7rd for feature importance in XG Boost model 
 
 
 
