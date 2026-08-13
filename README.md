@@ -169,5 +169,9 @@ Elaboration on each features by using SHAP dependence plot, we finding more info
 * For total credit utilized Credit utilisation contributes to the prediction, but its effect is not purely linear. The model appears to distinguish different borrower profiles rather than applying a simple "higher utilisation equals higher risk" rule.Historical collection activity appears to strengthen the impact of credit utilisation, suggesting that borrowers with both high credit exposure and collection history deserve closer monitoring.
 * Within this dataset, borrowers with more credit card accounts carrying balances generally received lower predicted default contributions from this feature. This finding is counterintuitive and may reflect other underlying borrower characteristics rather than a causal relationship.
 
+## Business Insights
+* 1. Interest rate feature is statistical significance for logistic regression model and most contribute predictive for XG boost model. However, this variable may was determined by lender from a historical credit before a loan contract was creating.
+  2. Mrs
+
 
 
