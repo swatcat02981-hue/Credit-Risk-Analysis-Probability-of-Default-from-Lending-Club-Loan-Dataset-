@@ -99,8 +99,8 @@ Overall, the model appears to prioritize detecting **Class 1** over minimizing f
 | log_total_credit_utilized | -0.2112 | 0.167 | -1.261 | 0.207 | -0.539 | 0.117 |
 
 A significant of coefficient can indicate by a p-value, a less number of p-value indicate a probability of coefficent value will eqauls to zero is very less. Mostly, we use a standard number to decide which feature coefficient is significant or not at 0.05. From a p-value matrix above, only two <0.05 coefficient number is cofficeint of interest rate which is 0.00 that mean mostly of model was determine by this variable. Most second sinificant feature is loan_amount which its coefficient equals to 0.041 that mean this variable can indicate a trend of model roughly.
-  * loan_amount Suppose income increase by 1 unit, odd of default will increase by 2.3% or odd ratio equal to 1.023
-  * interest_rate Suppose income increase by 1 unit, odd of default will increase by 5.5% or odd ratio equa
+  * Suppose loan amount increase by 1 unit, odd of default will increase by 2.3% or odd ratio equal to 1.023
+  * Suppose interest rate increase by 1 unit, odd of default will increase by 5.5% or odd ratio equal to 1.055
 
 ### Model2: XG Boost
 The model was evaluated using a confusion matrix, classification report, ROC-AUC score SHAP summary and dependence plot by choosing threshold at 0.16
