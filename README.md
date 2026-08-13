@@ -170,8 +170,12 @@ Elaboration on each features by using SHAP dependence plot, we finding more info
 * Within this dataset, borrowers with more credit card accounts carrying balances generally received lower predicted default contributions from this feature. This finding is counterintuitive and may reflect other underlying borrower characteristics rather than a causal relationship.
 
 ## Business Insights
-1. Interest rate feature is statistical significance for logistic regression model and most contribute predictive for XG boost model. However, this variable may was determined by lender from a historical credit before a loan contract was creating.
-2. Loan amount feature is second statistical significant only to interest rate for logistic regression model although it is 7rd for feature importance in XG Boost model 
+1. Interest rate feature is statistical significance for logistic regression model and most contribute predictive for XG boost model by increase a probability of loan default . However, this variable may was determined by lender from a historical credit before a loan contract was creating.
+2. Loan amount feature is second statistical significant only to interest rate for logistic regression model although it is 7rd for feature importance in XG Boost model. This feature appears to push a predictive default probability in more positive direction.
+3. Total utilization contribute model prediction on negative side although it isn't linear relationship but it distinguish between two groups of borrower at two different level of prediction.
+4. A higher historical collection amount of loan appears to impact a prediction from total utilization in less negative group of borrowers.
+5. Normally, debt to income seems to be an important metric for loan default predictions but in both of two models, this features less contribute to model prediction compared to with other features.
+6. Annual income appears not significant in logistic regression model but it 2nd feature importance in XG boost model. Both of model show that higher income decrease a default prediction.
 
 
 
